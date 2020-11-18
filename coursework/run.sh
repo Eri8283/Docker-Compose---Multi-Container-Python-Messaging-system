@@ -46,7 +46,7 @@ docker run --detach --rm --name $server --network $network $server
 
 # Run the client.
 #
-docker run -it --rm --name $client --network $network $client
+docker run -it --rm --name $client --network $network --env SERVER=$server $client
 
 # Stop the server
 #
