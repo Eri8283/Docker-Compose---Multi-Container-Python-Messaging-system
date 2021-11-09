@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run --rm busybox "$@"
+docker run -it --rm busybox "$@"

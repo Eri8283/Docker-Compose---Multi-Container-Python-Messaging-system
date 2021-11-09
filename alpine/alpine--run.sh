@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker run --rm alpine "$@"
+docker run -it --rm alpine "$@"
