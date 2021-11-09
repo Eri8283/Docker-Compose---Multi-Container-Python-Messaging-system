@@ -10,7 +10,7 @@ If you are able to run docker locally, then that's fine.
 
 If not, you can use the docker server here:
 
-  https://termcast.computing.dcu.ie/docker/
+  https://ca282.computing.dcu.ie/termcast/docker/
 
 You should be able to "git clone" your fork of this repo on that server.
 
