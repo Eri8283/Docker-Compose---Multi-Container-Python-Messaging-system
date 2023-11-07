@@ -39,9 +39,3 @@ Pass the message between the containers in some interesting way.
 
 I will run your composition, but I will also examine any scripts and configuration files which your solution
 requires.
-
-I will not strictly require exactly the text above, but the gist of the text must be clear.
-
-Ask if you're not sure.
-
-A penalty will be applied for superfluous 80s singers.
