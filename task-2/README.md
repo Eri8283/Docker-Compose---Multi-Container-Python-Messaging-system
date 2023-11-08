@@ -27,8 +27,7 @@ Nobody expects the Spanish Inquisition!
 
 ## For 60 marks
 
-One way to do this is for one container to be a web server, and the other to somehow just run `wget`.
-
+Your composition must involve *at least two* containers.
 This approach, or anything too similar to it, will receive a maximum of 60 marks.
 
 ## Impress me!
