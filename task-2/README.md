@@ -25,15 +25,13 @@ Nobody expects the Spanish Inquisition!
 - When I run `make test`, the *Spanish Inquisition* message must pass between those containers before being
   written to standard output.
 
-## For 30 marks
+## For 60 marks
 
 One way to do this is for one container to be a web server, and the other to somehow just run `wget`.
 
-This approach, or anything too similar to it, will receive a maximum of 30 marks.
+This approach, or anything too similar to it, will receive a maximum of 60 marks.
 
-## For 70 marks
-
-Impress me!
+## Impress me!
 
 Pass the message between the containers in some interesting way.
 
