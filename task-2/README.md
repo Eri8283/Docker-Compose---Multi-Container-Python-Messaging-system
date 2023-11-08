@@ -25,10 +25,7 @@ Nobody expects the Spanish Inquisition!
 - When I run `make test`, the *Spanish Inquisition* message must pass between those containers before being
   written to standard output.
 
-## For 60 marks
-
-Your composition must involve *at least two* containers.
-This approach, or anything too similar to it, will receive a maximum of 60 marks.
+**This approach, or anything too similar to it, will receive a maximum of 60 marks.**
 
 ## Impress me!
 
