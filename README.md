@@ -1,4 +1,4 @@
-# CA282 docker task
+# CSC1037 docker task
 
 Fork and clone this repo.
 
