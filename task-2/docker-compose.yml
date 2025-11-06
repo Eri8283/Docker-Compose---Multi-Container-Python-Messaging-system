@@ -1,3 +1,9 @@
-# ###########################################################
-# Do make changes here.
-
+services:
+  server:
+    build: ./server
+    ports:
+      - "5050:5000"
+  client:
+    build: ./client
+    depends_on:
+      - server

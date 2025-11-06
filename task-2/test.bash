@@ -1,11 +1,15 @@
 #!/bin/bash
 
-# #########################################################
-# The "test" command will be different depending upon the approach
-# you take.
-#
-# Add whatever commands test your container configuration here.
-#
-# This file is called by `make test`.
-#
+
+echo "Running test"
+
+sleep 3
+
+docker compose logs client
+
+if docker compose logs client | grep -q "Nobody expects the Spanish Inquisition!"; then
+  echo "message found"
+else
+  echo "message not found"
+fi
 
