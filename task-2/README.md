@@ -1,35 +1,64 @@
-# Task 2 - docker compose
+Docker Compose – The Spanish Inquisition
 
-**Do not make changes to the `Makefile` in this directory.**
+Author: Erioluwa Olaniran
 
-You should `git add` any additional files upon which your solution depends.
+Purpose
 
-I will test your work like this:
+This Docker Compose setup demonstrates inter-container communication in a creative way. The goal is to pass the message:
 
-```
-$ make up
-$ make test     # this runs ./test.bash
-$ make stop
-```
-
-The output of running `make test` should be (loosely):
-
-```
 Nobody expects the Spanish Inquisition!
-```
 
-**Important constraints**
 
-- You must use `docker compose`.
-- Your composition must involve *at least two* containers.
-- When I run `make test`, the *Spanish Inquisition* message must pass between those containers before being
-  written to standard output.
+between at least two containers before it reaches standard output. The project emphasizes the use of Docker Compose for orchestrating multiple containers while exploring interesting ways of message passing.
 
-**This approach, or anything too similar to it, will receive a maximum of 60 marks.**
+How It Works
 
-## Impress me!
+The composition uses two containers:
 
-Pass the message between the containers in some interesting way.
+Sender Container – Holds or generates the message.
 
-I will run your composition, but I will also examine any scripts and configuration files which your solution
-requires.
+Receiver Container – Receives the message from the sender and outputs it to standard output.
+
+The message is passed using shared volumes, but could also be implemented via network communication or message queues, making the interaction between containers more engaging than a simple echo.
+
+Optionally, the message can be transformed in some way before reaching the receiver container to demonstrate processing across containers.
+
+Languages Used
+
+Bash scripting – for simple scripts to generate and pass the message.
+
+Dockerfile / Docker Compose YAML – to define container images and orchestration.
+
+Optional: Python or other scripting languages could be used inside containers for creative message handling.
+
+How to Run
+
+Build and start the containers:
+
+make up
+
+
+Test the message passing:
+
+make test
+
+
+The output should display:
+
+Nobody expects the Spanish Inquisition!
+
+
+Stop the containers after testing:
+
+make stop
+
+
+Note: Do not modify the Makefile. Add any supporting files (Dockerfiles, scripts, configuration files) to Git so that the composition can run as expected.
+
+Notes
+
+The message must actively pass between containers; hardcoding the message in the final container will not meet the grading criteria.
+
+Creativity in how the message is passed or transformed is encouraged.
+
+Ensure all scripts and configuration files required for communication are included and properly referenced in docker-compose.yml.
